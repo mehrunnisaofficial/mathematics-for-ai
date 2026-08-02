@@ -18,11 +18,11 @@ Welcome, dear reader. Before we calculate anything, before we memorise a single 
 
 This chapter is written like the opening pages of a book on the philosophy of mathematics, not like a conventional maths lesson. There will be no long calculations yet. Instead, there will be curiosity, wonder, a little bit of history, and some questions that even the greatest mathematicians and philosophers have never fully agreed on.
 
-> 🌸 **A Note Before We Begin**
+> ꩜ **A Note Before We Begin**
 >
-> Wherever this notebook touches on philosophy — questions like whether numbers were invented or discovered — please remember that brilliant thinkers disagree with one another. We will always tell you clearly when something is a proven fact, when it is historical evidence, and when it is simply one philosophical opinion among several. You are free, and encouraged, to form your own view.
+> Wherever this notebook touches on philosophy — questions like whether numbers were invented or discovered — please remember that brilliant thinkers disagree with one another. We will always tell you clearly when something is a proven fact, when it is historical evidence, and when it is simply one philosophical opinion among several. You are free, and encouraged, to form your own view.  
 
-· · · · · ⭐ · · · · ·
+                                                                · · · · · ꩜ · · · · ·
 
 ## What Is a Number?
 
