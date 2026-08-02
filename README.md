@@ -68,8 +68,10 @@ Feel free to open an issue or submit a pull request. Constructive feedback is al
 
 # Copyright
 
-All notes, explanations, and original content in this repository are created as part of my personal learning journey.
+© 2026 Mehrunnisa. All Rights Reserved.
 
-Please do not copy, republish, or sell this work without permission.
+The notes, explanations, examples, and other original content in this repository are my own work, created as part of my personal learning journey.
 
-You are welcome to use this repository for learning and educational purposes while giving appropriate credit.
+You are welcome to read, learn from, and reference this repository for educational purposes with proper credit.
+
+Please do not copy, republish, redistribute, or sell any part of this repository without my written permission.
