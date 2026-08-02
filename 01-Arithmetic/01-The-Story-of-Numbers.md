@@ -1,6 +1,4 @@
-# 📘 MyMaths Notebook
-
-## Chapter 1 — The Story of Numbers
+# Chapter 1 — The Story of Numbers
 
 ⋆˚꩜｡
 
