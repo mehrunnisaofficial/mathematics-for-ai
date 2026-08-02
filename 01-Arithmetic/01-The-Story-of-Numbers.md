@@ -145,7 +145,7 @@ YouTube:
 
 Prefer reading offline?
 
-👉 **[Number - By Mehrunnisa.pdf](https://github.com/user-attachments/files/30637570/Number.-.By.Mehrunnisa.pdf)(#)**
+👉 **[Number - By Mehrunnisa.pdf](https://github.com/user-attachments/files/30637570/Number.-.By.Mehrunnisa.pdf)**
 
 Feel free to use these notes for your **personal learning, revision, and study purposes**.
 
