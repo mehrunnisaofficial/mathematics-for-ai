@@ -15,10 +15,11 @@ Okay, so this is literally the very first topic in my math notes. I'm starting f
 - [6. Quotient of Powers](#6-quotient-of-powers)
 - [7. Power of a Power](#7-power-of-a-power)
 - [8. Power of a Product](#8-power-of-a-product)
-- [9. Common Mistakes](#9-common-mistakes)
-- [10. Quick Revision](#10-quick-revision)
-- [11. Mini Quiz](#11-mini-quiz)
-- [12. End Concept Map](#12-end-concept-map)
+- [9. Special Powers](#9-special-powers)
+- [10. Common Mistakes](#10-common-mistakes)
+- [11. Quick Revision](#11-quick-revision)
+- [12. Mini Quiz](#12-mini-quiz)
+- [13. End Concept Map](#13-end-concept-map)
 
 ---
 
@@ -401,7 +402,151 @@ flowchart TD
 
 ---
 
-## 9. Common Mistakes
+## 9. Special Powers
+
+We already touched two of these back in Section 2, but now that I know the laws, I can actually understand *why* they work instead of just accepting them. Let's go through all three "special" types of exponents one by one.
+
+```mermaid
+flowchart TD
+    S["Special Powers"] --> Z["Zero Exponent<br/>a⁰"]
+    S --> N["Negative Exponent<br/>a⁻ⁿ"]
+    S --> F["Fractional Exponent<br/>a^(1/n)"]
+```
+
+### 9.1 Zero Exponent
+
+**Rule: a⁰ = 1** (for a ≠ 0)
+
+I already proved this back in Section 6 using the Quotient Law, but here's the quick recap of *why* it makes sense:
+
+```
+2^3 / 2^3 = 2^(3-3) = 2^0
+```
+
+But anything divided by itself is 1:
+
+```
+2^3 / 2^3 = 8/8 = 1
+```
+
+So `2^0 = 1`. The important thing here is: this isn't a special exception someone made up — it just naturally falls out of the subtraction rule.
+
+```
+5^0 = 1
+100^0 = 1
+```
+
+### 9.2 Negative Exponent
+
+**Rule: a⁻ⁿ = 1 / aⁿ**
+
+The easiest way to think about this is: a negative sign in the exponent doesn't make the *number* negative — it flips the power into a fraction (its reciprocal).
+
+Let's actually see why, using the Quotient Law again. What happens if the top exponent is *smaller* than the bottom one?
+
+```
+2^2 / 2^5 = 2^(2-5) = 2^-3
+```
+
+Now let's expand it the long way and simplify by cancelling:
+
+```
+2^2 / 2^5 = (2 × 2) / (2 × 2 × 2 × 2 × 2)
+```
+
+Cancel the two matching pairs on top and bottom:
+
+```mermaid
+flowchart LR
+    A["2 × 2  (top)"] --> C["both 2's cancel with the bottom"]
+    B["2 × 2 × 2 × 2 × 2  (bottom)"] --> C
+    C --> D["1 / (2 × 2 × 2) = 1/2³"]
+```
+
+So:
+
+```
+2^2 / 2^5 = 2^-3 = 1/2^3 = 1/8
+```
+
+**Now I can see why** a negative exponent means "flip it" — it's just what happens naturally when the bottom of the fraction has *more* copies of the base than the top.
+
+#### Example: `2^-3`
+
+```
+2^-3 = 1/2^3 = 1/8
+```
+
+> **A common mistake I can make here** is thinking `2^-3 = -8`. It does NOT make the answer negative — it makes it a fraction: `1/8`.
+
+### 9.3 Fractional Exponent
+
+**Rule: a^(1/n) = ⁿ√a**  (the n-th root of a)
+
+This one looks strange at first, but the Power of a Power law (Section 7) actually explains it perfectly. Watch this:
+
+If `a^(1/2)` squared should just give me back `a` (because squaring undoes a "half power"):
+
+```
+(a^(1/2))^2 = a^((1/2)×2) = a^1 = a
+```
+
+But I also know that **squaring a square root gives back the original number**:
+
+```
+(√a)^2 = a
+```
+
+Since both `a^(1/2)` and `√a` do the exact same thing when squared, they must be the same thing:
+
+```
+a^(1/2) = √a
+```
+
+This basically means: a fractional exponent like `1/2` isn't multiplication or division at all — it's asking "what number, multiplied by itself the right number of times, gives me this?" In other words, it's a **root** in disguise.
+
+```mermaid
+flowchart TD
+    A["a^(1/n)"] --> B["means: the n-th root of a"]
+    B --> C["ⁿ√a"]
+```
+
+The denominator of the fraction tells me *which* root to take:
+
+- `a^(1/2)` → square root of a
+- `a^(1/3)` → cube root of a
+- `a^(1/n)` → n-th root of a
+
+#### Example: `16^(1/2)`
+
+I need a number that, multiplied by itself once (squared), gives 16.
+
+```
+16^(1/2) = √16 = 4      (because 4 × 4 = 16)
+```
+
+#### Example: `27^(1/3)`
+
+I need a number that, multiplied by itself twice more (cubed), gives 27.
+
+```
+27^(1/3) = ³√27 = 3      (because 3 × 3 × 3 = 27)
+```
+
+### Quick summary table
+
+| Exponent Type | Rule | Example |
+|---|---|---|
+| Zero | a⁰ = 1 | 5⁰ = 1 |
+| Negative | a⁻ⁿ = 1/aⁿ | 2⁻³ = 1/8 |
+| Fractional (1/2) | a^(1/2) = √a | 16^(1/2) = 4 |
+| Fractional (1/3) | a^(1/3) = ³√a | 27^(1/3) = 3 |
+
+> **A common mistake I can make here** is treating a fractional exponent like normal division — `16^(1/2)` does NOT mean `16 ÷ 2 = 8`. It means "take the square root of 16," which is `4`.
+
+---
+
+## 10. Common Mistakes
 
 Quick round-up of the slip-ups I need to watch out for:
 
@@ -410,10 +555,12 @@ Quick round-up of the slip-ups I need to watch out for:
 - ❌ `(2×3)^2 = 2^2 × 3` → ✅ apply exponent to **both** factors: `2^2 × 3^2`
 - ❌ Adding exponents when the **bases are different** (e.g., `2^3 × 3^2` cannot be simplified this way — the laws only work for the *same base*)
 - ❌ Thinking `a^0 = 0` → ✅ it's actually `1` (for a ≠ 0)
+- ❌ Thinking `2^-3 = -8` → ✅ it's `1/8` — a negative exponent flips to a fraction, it doesn't make the value negative
+- ❌ Thinking `16^(1/2) = 8` (treating it as division) → ✅ it's `√16 = 4` — a fractional exponent means a root
 
 ---
 
-## 10. Quick Revision
+## 11. Quick Revision
 
 | Law | Rule |
 |---|---|
@@ -428,16 +575,21 @@ Quick round-up of the slip-ups I need to watch out for:
 | a¹ | a |
 | 1ⁿ | 1 |
 | 0ⁿ &nbsp;(n > 0) | 0 |
+| a⁻ⁿ | 1/aⁿ |
+| a^(1/2) | √a |
+| a^(1/3) | ³√a |
 
 **Memory trick:**
 - Multiplying same-base powers → **ADD**
 - Dividing same-base powers → **SUBTRACT**
 - Power on a power → **MULTIPLY**
 - Product inside brackets → **DISTRIBUTE** the exponent to each factor
+- Negative exponent → **FLIP** it into a fraction
+- Fractional exponent → **ROOT** (denominator tells you which root)
 
 ---
 
-## 11. Mini Quiz
+## 12. Mini Quiz
 
 Try these before checking the answers below — no peeking!
 
@@ -448,6 +600,9 @@ Try these before checking the answers below — no peeking!
 5. `9^0 = ?`
 6. `1^250 = ?`
 7. What's wrong with this step: `2^3 × 2^2 = 4^5`?
+8. `2^-3 = ?`
+9. `16^(1/2) = ?`
+10. `27^(1/3) = ?`
 
 <details>
 <summary>Click to check answers</summary>
@@ -459,24 +614,30 @@ Try these before checking the answers below — no peeking!
 5. `9^0 = 1`
 6. `1^250 = 1`
 7. The base should stay as `2`, not become `4`. Correct answer: `2^5 = 32`
+8. `2^-3 = 1/2^3 = 1/8`
+9. `16^(1/2) = √16 = 4`
+10. `27^(1/3) = ³√27 = 3`
 
 </details>
 
 ---
 
-## 12. End Concept Map
+## 13. End Concept Map
 
 ```mermaid
 flowchart TD
     Root["Powers & Exponents"] --> Basics["Base & Exponent<br/>aⁿ = a × a × ... × a"]
     Root --> Laws["Laws of Exponents"]
+    Root --> SP["Special Powers"]
 
     Laws --> P["Product<br/>aᵐ×aⁿ = a⁽ᵐ⁺ⁿ⁾"]
     Laws --> Qt["Quotient<br/>aᵐ÷aⁿ = a⁽ᵐ⁻ⁿ⁾"]
     Laws --> Pw["Power of Power<br/>(aᵐ)ⁿ = a⁽ᵐⁿ⁾"]
     Laws --> Pd["Power of Product<br/>(ab)ⁿ = aⁿ×bⁿ"]
 
-    Laws --> Special["Special Cases<br/>a⁰=1, a¹=a, 1ⁿ=1, 0ⁿ=0"]
+    SP --> Z["Zero: a⁰ = 1"]
+    SP --> N["Negative: a⁻ⁿ = 1/aⁿ"]
+    SP --> F["Fractional: a^(1/n) = ⁿ√a"]
 ```
 
 That's the full picture — start with what a power even *is*, then build every law from first principles instead of memorizing it blind. Next up: putting these laws into more mixed practice problems.
@@ -496,6 +657,7 @@ If you enjoyed these notes, you'll probably enjoy the rest too.
 | Instagram | @mehrunnisa.ai |
 | SubStack | The Epoch |
 | YouTube | @mehrunnisa.ai |
+
 
 **Usage Terms**
 These notes are free to use for personal learning, revision, and study. Please do not:
